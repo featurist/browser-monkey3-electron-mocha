@@ -1,0 +1,16 @@
+{
+  "name": "browser-monkey3-electron-mocha",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "artemave <artemave@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-monkey": "3.0.0-beta.4",
+    "electron": "^10.1.1",
+    "electron-mocha": "^9.1.0"
+  },
+  "dependencies": {
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1"
+  }
+}
