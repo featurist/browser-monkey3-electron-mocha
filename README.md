@@ -9,7 +9,9 @@ Now create a test file: `test/appSpec.js`
 For simplicity we will create our react application in the test file.
 
 ```js
-const {ReactMount} = require('browser-monkey')
+const {Query} = require('browser-monkey')
+const ReactMount = require('browser-monkey/ReactMount')
+const React = require('react')
 
 class App extends React.Component {
   render () {
