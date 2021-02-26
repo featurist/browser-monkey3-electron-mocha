@@ -1,4 +1,5 @@
-const {ReactMount, Query} = require('browser-monkey')
+const {Query} = require('browser-monkey')
+const ReactMount = require('browser-monkey/ReactMount')
 const React = require('react')
 
 class App extends React.Component {
