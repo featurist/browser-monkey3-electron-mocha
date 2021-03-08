@@ -10,7 +10,7 @@ For simplicity we will create our react application in the test file.
 
 ```js
 const {Query} = require('browser-monkey')
-const ReactMount = require('browser-monkey/ReactMount')
+const {default: ReactMount} = require('browser-monkey/ReactMount')
 const React = require('react')
 
 class App extends React.Component {
@@ -24,7 +24,7 @@ describe('greeting', () => {
     const mount = new ReactMount(React.createElement(App, {}, null))
     const page = new Query().mount(mount)
 
-    await page.find('.greeting').shouldHave({text: 'Hello World'})
+    await page.find('.greeting').containing('Hello World').shouldExist()
   })
 })
 ```
